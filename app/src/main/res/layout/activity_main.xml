@@ -36,6 +36,7 @@
         android:text="Jenis Kelamin" />
 
     <RadioGroup
+        android:id="@+id/radiogrup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -62,19 +63,19 @@
         android:text="Materi yang dikuasai" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/cb1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tali temali" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/cb2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Membaca kompas" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/cb3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Menghitung tinggi bayangan" />
@@ -97,7 +98,7 @@
         android:text="Submit" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tvhasil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hasil" />
