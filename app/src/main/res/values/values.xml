@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="provinsi">
+        <item>Jawa timur</item>
+        <item>Jawa tengah</item>
+        <item>Jawa barat</item>
+    </string-array>
+</resources>
