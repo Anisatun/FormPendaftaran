@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         cb2 = (CheckBox) findViewById(R.id.cb2);
         cb3 = (CheckBox) findViewById(R.id.cb3);
         tvhasil = (TextView) findViewById(R.id.tvhasil);
+        spn = (Spinner) findViewById(R.id.spn);
+
 
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
