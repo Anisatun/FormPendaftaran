@@ -25,7 +25,7 @@
         android:text="Nama : " />
 
     <EditText
-        android:id="@+id/editTextNama"
+        android:id="@+id/etNama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -87,9 +87,10 @@
         android:text="Provinsi" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spn"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:entries="@array/provinsi" />
 
     <Button
         android:id="@+id/button"

@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     Button button;
     RadioGroup radiogrup;
     CheckBox cb1, cb2, cb3;
-    Spinner spinnerprovinsi;
+    Spinner spn;
     TextView tvhasil;
 
     @Override
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        etNama = (EditText) findViewById(R.id.editTextNama);
+        etNama = (EditText) findViewById(R.id.etNama);
         button = (Button) findViewById(R.id.button);
         radiogrup = (RadioGroup) findViewById(R.id.radiogrup);
         cb1 = (CheckBox) findViewById(R.id.cb1);
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             if (hasil == null) {
                 tvhasil.setText("anda belum mengisi");
             } else {
-                String materi = "Materi yang dikuasai";
+                String materi = "\t Materi yang dikuasai \t\n";
                 int startlen = materi.length();
                 if (cb1.isChecked()) materi += "\t\t - " + cb1.getText() + "\n";
                 if (cb2.isChecked()) materi += "\t\t - " + cb2.getText() + "\n";
@@ -63,10 +63,10 @@ public class MainActivity extends AppCompatActivity {
                     tvhasil.setText("Anda belum memilih materi");
                 } else {
                     builder.append("Nama:" + nama + "\n");
-                    builder.append("Provinsi:");
-                    builder.append(spinnerprovinsi.getSelectedItem().toString() + "\n");
                     builder.append("Jenis kelamin : " + hasil + "\n");
                     builder.append(materi + "\n");
+                    builder.append("Provinsi:");
+                    builder.append(spn.getSelectedItem().toString() + "\n");
                     tvhasil.setText(builder);
                 }
             }
